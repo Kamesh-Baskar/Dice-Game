@@ -1,0 +1,116 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa; 
+  background-image: url(https://media.istockphoto.com/id/1024064424/vector/gambling-dices-seamless-pattern-on-dark-background-vector.jpg?s=612x612&w=0&k=20&c=H1g-Kd6xX7TXfITQ3dEbh7EU3MHuVjXQvnN5HlnddH4=); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #d0cccc;
+  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #bdbaba; 
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+
+.dice {
+  display: inline-block;
+  margin: 30px 50px;
+  text-align: center;
+  gap: 50px;
+}
+
+.dice img {
+  
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 220px;
+  height: 230px;
+  transition: transform 0.3s ease;
+}
+
+.dice img:hover {
+  transform: rotate(15deg);
+}
+
+
+.butt {
+  background-color: #1e90ff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.butt:hover {
+  background-color: #0b15da;
+  transform: scale(1.05); 
+}
+
+.butt:active {
+  transform: scale(0.95); 
+}
+
+
+footer {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  color: #555;
+  
+}
+
+footer p {
+  margin: 5%;
+}
+
+
+@keyframes shake {
+  0%, 100% {
+      transform: rotate(0);
+  }
+  25% {
+      transform: rotate(-15deg);
+  }
+  50% {
+      transform: rotate(15deg);
+  }
+  75% {
+      transform: rotate(-10deg);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease;
+}
